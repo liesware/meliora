@@ -24,6 +24,12 @@ with the world... with us.
 * Learn cryptopp
 * Learn Security
 
+See learning.txt
+
+## Problem
+Imagine a Database server wich databases are big, you can't install new packages. So a ransomeware needs:
+* run without dependencies
+* run fast
 
 ## History
 
