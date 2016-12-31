@@ -1,0 +1,16 @@
+# Cryptography 
+http://www.crypto-textbook.com/
+https://www.youtube.com/watch?v=2aHkqB2-46k&list=PL6N5qY2nvvJE8X75VkXglSrVhLv1tVcfy
+
+#Linux
+http://advancedlinuxprogramming.com/
+http://man7.org/tlpi/
+
+#Linux Admin
+https://access.redhat.com/documentation/en/red-hat-enterprise-linux/
+
+#C
+secure programming cookbook for c and c++
+
+#Security
+https://www.cs.fsu.edu/~redwood/OffensiveComputerSecurity/lectures.html
