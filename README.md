@@ -9,8 +9,12 @@ https://en.wikipedia.org/wiki/Meliora
 DISCLAIMER: This is only for testing/educational purposes and can only be used on your own pc or where strict consent has been 
 given. Do not use this for illegal purposes.
 
+## Abstract
+This is a ransomware for Linux Servers, so it has been successfully tested in Centos 7 and Red Hat 7.
+
 ## Intro
 Maybe you can share my passion for cryptography, linux and security, if so you this will be funny for you.
+This cade was made in 2013 and forgotten, but today it's alive.
 
 ## Why
 * Because I like, so simple.
@@ -31,6 +35,19 @@ Imagine a Database server wich databases are big, you can't install new packages
 * run without dependencies
 * run fast
 
-## History
+## Run
+```
+yum group install "Development Tools"
+yum install glibc-static
+yum install libstdc++-static
+yum install cryptopp cryptopp-devel
 
-The history started in 2013 when I wrote my thesis to get my Bachelor's degree, 
+wget https://www.cryptopp.com/cryptopp562.zip
+unzip cryptopp562.zip
+make libcryptopp.a
+cp  libcryptopp.a /usr/lib64/libcrypto.a
+
+
+
+```
+
