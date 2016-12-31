@@ -64,4 +64,5 @@ g++ -static -O2   melde.cpp -o melde -lcryptopp
 * Add LKM
 
 if I can help you in something just let know, 
-liesware 4t hotmail d0t com
+liesware 4t hotmail d0t com , 
+or if you want to contribute/improve or if you have a better idea please write me.
