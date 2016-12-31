@@ -9,10 +9,21 @@ https://en.wikipedia.org/wiki/Meliora
 DISCLAIMER: This is only for testing/educational purposes and can only be used on your own pc or where strict consent has been 
 given. Do not use this for illegal purposes.
 
+## Intro
+Maybe you can share my passion for cryptography, linux and security, if so you this will be funny for you.
+
 ## Why
 * Because I like, so simple.
 * I am so grateful with open source community, thanks to all the people who has been written something to share their knowledge 
 with the world... with us.
+
+
+## Educational goals
+* Learn cryptography
+* Learn Linux
+* Learn cryptopp
+* Learn Security
+
 
 ## History
 
