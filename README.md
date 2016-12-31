@@ -14,7 +14,7 @@ This is a fast and secure ransomware  for Linux DB Servers , so it has been succ
 
 ## Features
 * Sosemanuk, stream cipher instead of block ciphers, because of improving performance 727 Mib/sec.
-- https://www.cryptopp.com/benchmarks.html
+ - https://www.cryptopp.com/benchmarks.html
 * Elliptic curves (ECIES)  instead of RSA, because of improving security.
 * Regex to find files.
 * Static compile insted of shared libraries, because of improving execution.
