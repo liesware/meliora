@@ -33,4 +33,4 @@ Imagine a Database server wich databases are big, you can't install new packages
 
 ## History
 
-The history started in 2013 when I wrote my thesis to  Bachelor's degree
+The history started in 2013 when I wrote my thesis to get my Bachelor's degree, 
