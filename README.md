@@ -56,4 +56,9 @@ g++ -static -O2   melen.cpp -o melen -lcryptopp
 g++ -static -O2   melde.cpp -o melde -lcryptopp
 
 ```
+## Next Steps 
+* Add multithreading
+* Add LKM
 
+if I can help you in something just let know
+liesware 4t hotmail d0t com
