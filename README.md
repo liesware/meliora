@@ -11,7 +11,8 @@ given. Do not use this for illegal purposes.
 
 ## Why
 * Because I like, so simple.
-* I am so grateful with open source community, thanks to all the people who has been written something to share their knowledge with the world... with us.
+* I am so grateful with open source community, thanks to all the people who has been written something to share their knowledge 
+with the world... with us.
 
 ## History
 
