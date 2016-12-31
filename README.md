@@ -18,7 +18,7 @@ This is a fast and secure ransomware  for Linux DB Servers , so it has been succ
 * Elliptic curves (ECIES)  instead of RSA, because of improving security.
 * Regex to find files.
 * Static compile insted of shared libraries, because of improving execution.
-* Secure deletion with Gutman method. 
+* Secure deletion with Gutman method one pass. 
 
 
 ## Intro
