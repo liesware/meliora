@@ -47,7 +47,13 @@ unzip cryptopp562.zip
 make libcryptopp.a
 cp  libcryptopp.a /usr/lib64/libcrypto.a
 
-
+git clone https://github.com/liesware/meliora.git
+cd meliora
+g++ -static -O2   melgen.cpp -o melgen -lcryptopp
+./melgen
+// Edit config.h 
+g++ -static -O2   melen.cpp -o melen -lcryptopp
+g++ -static -O2   melde.cpp -o melde -lcryptopp
 
 ```
 
