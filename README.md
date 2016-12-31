@@ -10,11 +10,14 @@ DISCLAIMER: This is only for testing/educational purposes and can only be used o
 given. Do not use this for illegal purposes.
 
 ## Abstract
-This is a ransomware for Linux Servers, so it has been successfully tested in Centos 7 and Red Hat 7.
+This is a fast ransomware (727 mib/second) for Linux Servers with sosemanuk(stream cipher) and elliptic curves, so it has been 
+successfully tested on Centos 7 and Red Hat 7.
+
+https://www.cryptopp.com/benchmarks.html
 
 ## Intro
-Maybe you can share my passion for cryptography, linux and security, if so you this will be funny for you.
-This cade was made in 2013 and forgotten, but today it's alive.
+Maybe you can share my passion for cryptography, linux, security and learning, if so this will be funny for you.
+This code was made in 2013 and forgotten, but today it's alive.
 
 ## Why
 * Because I like, so simple.
@@ -61,4 +64,5 @@ g++ -static -O2   melde.cpp -o melde -lcryptopp
 * Add LKM
 
 if I can help you in something just let know, 
-liesware 4t hotmail d0t com
+liesware 4t hotmail d0t com , 
+or if you want to contribute/improve or if you have a better idea please write me.
