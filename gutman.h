@@ -1,4 +1,8 @@
 //gutman.cpp
+
+// "Secure Deletion of Data from Magnetic and Solid-State Memory" Peter Gut-
+// mann: http://www.cs.auckland.ac.nz/~pgut001/pubs/secure_del.html
+
 #include <limits.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -8,6 +12,8 @@
 #include <string.h>
    
 #define SPC_WIPE_BUFSIZE 4096
+
+// Plase see "secure programming cookbook for c and c++" problem "2.5 Erasing Files Securely"
    
 static int write_data(int fd, const void *buf, size_t nbytes) {
   size_t  towrite, written = 0;
@@ -41,7 +47,8 @@ int spc_fd_wipe(int fd) {
   int           count, i, pass, patternsz;
   struct stat   st;
   unsigned char buf[SPC_WIPE_BUFSIZE], *pattern;
-   
+
+//	write 33 pass takes a lot of time, so it just write one   
   static unsigned char single_pats[1] = { 0xff};
    
   if (fstat(fd, &st) == -1) return -1;
@@ -61,11 +68,6 @@ int spc_file_wipe(FILE *f) {
   return spc_fd_wipe(fileno(f));
 }
 
-/*se encarga de aplicar el metodo gutman moificado y borrar 
- * los archivos.
- * para mas informacion este codigo fue tomado del 
- * problema 2.5 del libro secure programming cookbook
-*/
  int gutman(const char * ftex)
 {
  FILE * pFile;
@@ -83,7 +85,7 @@ int spc_file_wipe(FILE *f) {
 return 0;
 }
 
-//solo borra los archivos
+// Delete file
 int srfdel(const char * ftex)
 {
  FILE * pFile;

@@ -29,7 +29,7 @@
 using namespace std;
 using namespace CryptoPP;
 
-//Check String Base16 
+//	Check String Base16 
 int Isb16(string &stl)
 {	
 	string b16=" 0123456789ABCDEF";
@@ -51,7 +51,7 @@ int Isb16(string &stl)
 	return 0;
 }
 
-//Check String Base64
+//	Check String Base64
 int Isb64(string &stl)
 {
 	string b64=" ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
@@ -71,8 +71,17 @@ int Isb64(string &stl)
 	}
 	return 0;
 }
+////////////////////////////////////////////////////////////////////////
+//	https://www.cryptopp.com/wiki/Keys_and_Formats
 
+//	https://www.cryptopp.com/wiki/BufferedTransformation
 
+//	https://www.cryptopp.com/wiki/StringSink
+//	https://www.cryptopp.com/wiki/StringSource
+//	https://www.cryptopp.com/wiki/Base64Encoder
+//	https://www.cryptopp.com/wiki/FileSink
+
+// It saves private key in filename
 int SavePriv64(string& filename,const PrivateKey& key)
 {	
 	AutoSeededRandomPool prng;
@@ -98,6 +107,9 @@ int SavePriv64(string& filename,const PrivateKey& key)
 	
 }
 
+//	https://www.cryptopp.com/wiki/FileSource
+
+// It loads private key from filename
 int LoadPriv64(string& filename,PrivateKey& key)
 {	
 	AutoSeededRandomPool prng;
@@ -122,7 +134,7 @@ int LoadPriv64(string& filename,PrivateKey& key)
     			
 }
 
-
+// It saves public key in filename
 int SavePub64(string& filename ,const PublicKey& key )
 {	
 	AutoSeededRandomPool prng;
@@ -146,7 +158,7 @@ int SavePub64(string& filename ,const PublicKey& key )
 	return 0;		
 }
 
-
+// It loads public key from filename
 int LoadPub64(string& filename,PublicKey& key)
 {	
 	AutoSeededRandomPool prng;
@@ -171,7 +183,11 @@ int LoadPub64(string& filename,PublicKey& key)
     			
 }
 
+////////////////////////////////////////////////////////////////////////
 
+//	https://www.cryptopp.com/wiki/Hash_functions
+
+// it calculates sha3 from a string 
 int Sha3s(string& str, string& digest)
 {	
 	digest.clear();
@@ -187,7 +203,7 @@ int Sha3s(string& str, string& digest)
 	return 0;
 }
 
-
+// it calculates sha1sum from a EC key 
 int ShaPriv(string& digest,const PrivateKey& key)
 {	
 	AutoSeededRandomPool prng;
@@ -215,6 +231,11 @@ int ShaPriv(string& digest,const PrivateKey& key)
 	
 }
 
+////////////////////////////////////////////////////////////////////////
+
+//	https://www.cryptopp.com/wiki/Advanced_Encryption_Standard
+
+//	Generates sosemanuk's key and iv
 int Sosemanukgen(string& skey,string& siv )
 {
 	skey.clear();
@@ -238,6 +259,10 @@ int Sosemanukgen(string& skey,string& siv )
 	return 0;
 }
 
+//	https://www.cryptopp.com/wiki/HexEncoder
+//	https://www.cryptopp.com/wiki/Streamtransformationfilter
+
+// Encrypt a file
 int Sosemanukc(string& stl, string& stl2,string& skey,string& siv)
 {		
 	if(Isb16(skey)!=0)
@@ -282,6 +307,7 @@ int Sosemanukc(string& stl, string& stl2,string& skey,string& siv)
 	
 }
 
+// Decrypt a file
 int Sosemanukd(string& stl, string& stl2,string& skey,string& siv)
 {		
 	if(Isb16(skey)!=0)
@@ -328,6 +354,13 @@ int Sosemanukd(string& stl, string& stl2,string& skey,string& siv)
 	
 }
 
+////////////////////////////////////////////////////////////////////////
+//	https://www.cryptopp.com/wiki/Elliptic_Curve_Cryptography
+//	https://www.cryptopp.com/wiki/Rsa_cryptography
+
+// https://www.cryptopp.com/wiki/Elliptic_Curve_Integrated_Encryption_Scheme
+
+// Encrypt string and save into a file
 int Eciese(string& file,string& str){
 	
 	CryptoPP::AutoSeededRandomPool prng;
@@ -355,7 +388,7 @@ int Eciese(string& file,string& str){
 	return 0;
 }
 
-
+// Decrypt file and save into a string
 int Eciesd(string& file,string& str){
 	
 	CryptoPP::AutoSeededRandomPool prng;

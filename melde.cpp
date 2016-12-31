@@ -1,4 +1,4 @@
-//	See melen.cpp , it is the same code
+//	See melen.cpp , it is almost the same code 
 
 #include "melcrypt.h"
 #include "config.h"
