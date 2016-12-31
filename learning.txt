@@ -1,6 +1,7 @@
 # Cryptography 
 http://www.crypto-textbook.com/
 https://www.youtube.com/watch?v=2aHkqB2-46k&list=PL6N5qY2nvvJE8X75VkXglSrVhLv1tVcfy
+http://www.cryptovirology.com/
 
 #Linux
 http://advancedlinuxprogramming.com/
