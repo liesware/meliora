@@ -10,10 +10,16 @@ DISCLAIMER: This is only for testing/educational purposes and can only be used o
 given. Do not use this for illegal purposes.
 
 ## Abstract
-This is a fast ransomware (727 mib/second) for Linux Servers with sosemanuk(stream cipher) and elliptic curves, so it has been 
-successfully tested on Centos 7 and Red Hat 7.
+This is a fast and secure ransomware  for Linux DB Servers , so it has been successfully tested on Centos 7 and Red Hat 7.
 
-https://www.cryptopp.com/benchmarks.html
+## Features
+* Sosemanuk, stream cipher instead of block ciphers, because of improving performance 727 Mib/sec.
+ - https://www.cryptopp.com/benchmarks.html
+* Elliptic curves (ECIES)  instead of RSA, because of improving security.
+* Regex to find files.
+* Static compile insted of shared libraries, because of improving execution.
+* Secure deletion with Gutman method one pass. 
+
 
 ## Intro
 Maybe you can share my passion for cryptography, linux, security and learning, if so this will be funny for you.
