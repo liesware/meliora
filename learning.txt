@@ -12,6 +12,10 @@ https://access.redhat.com/documentation/en/red-hat-enterprise-linux/
 
 #C
 secure programming cookbook for c and c++
+http://www.tldp.org/HOWTO/Program-Library-HOWTO/
 
 #Security
 https://www.cs.fsu.edu/~redwood/OffensiveComputerSecurity/lectures.html
+
+#Sosemanuk
+http://www.ecrypt.eu.org/stream/e2-sosemanuk.html
